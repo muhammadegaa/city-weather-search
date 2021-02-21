@@ -1,4 +1,4 @@
-# CityWeather
+# OpenWeather
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.1.4. This app is used to display weather forecast by using Rapid API Open Weather Map.
 
