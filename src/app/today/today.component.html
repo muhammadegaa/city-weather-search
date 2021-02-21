@@ -42,9 +42,9 @@
         </agm-map>
     </div>
     <ng-template #waiting>
-        <img src="https://media.tenor.com/images/42143b23a4be8a1f857a206774f251fc/tenor.gif" alt="" *ngIf="locationDeined">
+        <img src="https://media3.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif" alt="" *ngIf="locationDefined">
 
-        <div class="input-group mt-5" *ngIf="locationDeinedEnableCity">
+        <div class="input-group mt-5" *ngIf="locationDefinedEnableCity">
             <input class="form-control" type="text" #userInput placeholder="Enter city name">
             <div class="input-group-append">
                 <button class="input-group-text btn btn-outline-primary" (click)="getCity(userInput.value)">Search</button>
