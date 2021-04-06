@@ -18,7 +18,7 @@
             {{ (weather.main.temp-32)*(5/9)  | number: '1.0-1' }} &#176;C</span>
             <p class="text-uppercase font-italic font-weight-bold">{{ weather.weather[0].description }}</p>
         </div>
-        <table class="table table-light table-stripped table-bordered table-sm">
+        <table class="table table-light table-striped table-bordered table-sm">
             <tbody>
                 <tr>
                     <td>Humidity</td><td>{{ weather.main.humidity }}%</td>
