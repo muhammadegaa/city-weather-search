@@ -10,8 +10,8 @@ export class TodayComponent implements OnInit {
   lat: any;
   lon: any;
   weather: any;
-  locationDefined: boolean = true;
-  locationDefinedEnableCity = false;
+  locationDenied: boolean = true;
+  locationDeniedEnableCity = false;
   constructor(private weatherService: WeatherService) { }
 
   ngOnInit(): void {
@@ -30,8 +30,8 @@ export class TodayComponent implements OnInit {
          this.weatherService.getWeatherDataByCoords
        }, (error)=> {
          if(error.code == error.PERMISSION_DENIED){
-           this.locationDefined = false;
-           this.locationDefinedEnableCity = true;
+           this.locationDenied = false;
+           this.locationDeniedEnableCity = true;
          }
        })
     }
